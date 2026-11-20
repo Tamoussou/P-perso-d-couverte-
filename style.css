@@ -1,0 +1,139 @@
+/* Réglages généraux de la page */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0f172a; /* Fond bleu nuit très sombre */
+    color: #f8fafc; /* Texte blanc cassé */
+    line-height: 1.6;
+}
+
+/* Style de l'en-tête */
+header {
+    background: linear-gradient(135deg, #6366f1, #ec4899); /* Dégradé violet/rose */
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Conteneur principal centré */
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #e2e8f0;
+}
+
+/* Section Introduction & Badges */
+.intro {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.badges {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.badge {
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+/* Couleurs spécifiques par genre */
+.shonen { background-color: #ef4444; color: white; }
+.shojo { background-color: #ec4899; color: white; }
+.seinen { background-color: #8b5cf6; color: white; }
+.slice { background-color: #10b981; color: white; }
+
+/* Grille de cartes avec Flexbox */
+.grille-cartes {
+    display: flex;
+    flex-wrap: wrap; /* Permet aux cartes de passer à la ligne sur mobile */
+    gap: 24px;
+    justify-content: center;
+}
+
+/* Design d'une carte individuelle */
+.carte {
+    background-color: #1e293b; /* Gris-bleu un peu plus clair que le fond */
+    border-radius: 12px;
+    padding: 25px;
+    width: 250px;
+    border: 1px solid #334155;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation fluide */
+}
+
+/* Effet quand on passe la souris sur une carte */
+.carte:hover {
+    transform: translateY(-8px); /* La carte monte légèrement */
+    box-shadow: 0 10px 25px rgba(236, 72, 153, 0.3); /* Ombre rosée */
+    border-color: #ec4899;
+}
+
+.tag {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.carte h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.carte p {
+    font-size: 0.95rem;
+    color: #cbd5e1;
+    margin-bottom: 15px;
+}
+
+.pourquoi {
+    font-size: 0.85rem;
+    color: #94a3b8;
+    border-top: 1px solid #334155;
+    padding-top: 10px;
+}
+
+/* Pied de page */
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #020617;
+    margin-top: 40px;
+    color: #94a3b8;
+    font-size: 0.9rem;
+}
+
+.credit {
+    margin-top: 8px;
+    color: #64748b;
+}
