@@ -7,16 +7,24 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #0f172a; /* Fond bleu nuit très sombre */
     color: #f8fafc; /* Texte blanc cassé */
     line-height: 1.6;
+
+    /* Image de fond avec un voile sombre semi-transparent par-dessus */
+    background-image: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)), url('G_Fond.jpg');
+    background-size: cover; /* L'image couvre tout l'écran sans se déformer */
+    background-position: center; /* Centre l'image */
+    background-attachment: flex; /* L'image reste fixe quand tu fais défiler la page */
+    background-repeat: no-repeat; /* Empêche l'image de se répéter en mosaïque */
 }
 
 /* Style de l'en-tête */
 header {
-    background: linear-gradient(135deg, #6366f1, #ec4899); /* Dégradé violet/rose */
+    background-image: url('header.jpg'); 
+    background-size: 100% 100%; /* Remplit 100% de la largeur et 100% de la hauteur */
+    background-repeat: no-repeat;
     text-align: center;
-    padding: 60px 20px;
+    padding: 80px 30px;
 }
 
 header h1 {
@@ -62,6 +70,14 @@ h2 {
     border-radius: 20px;
     font-weight: bold;
     font-size: 0.9rem;
+    text-decoration: none; /* Enlève le soulignement du lien */
+    transition: transform 0.2s ease, opacity 0.2s ease; /* Animation douce */
+}
+
+/* Petit effet quand on passe la souris sur un badge */
+.badge:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
 }
 
 /* Couleurs spécifiques par genre */
